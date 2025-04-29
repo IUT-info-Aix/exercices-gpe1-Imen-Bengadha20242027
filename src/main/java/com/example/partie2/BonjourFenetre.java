@@ -34,31 +34,15 @@ public class BonjourFenetre extends Application {
         vbox.setAlignment(Pos.CENTER);
         vbox.setSpacing(10);
 
-        // Label
-        helloLabel = new Label("Bonjour à tous !");
-        vbox.getChildren().add(helloLabel);
 
-        // Champ de texte
-        nameField = new TextField("Veuillez saisir un nom");
-        nameField.setMaxWidth(180.0);
-        nameField.setFont(Font.font("Courier", FontWeight.NORMAL, 12));
-        vbox.getChildren().add(nameField);
-
-        // Réaction à la touche Entrée — utilise TextFieldHandler (ActionEvent)
-        nameField.setOnAction(new TextFieldHandler(helloLabel, nameField));
-
-        // Bouton avec image
-        button = new Button();
-        Image image = new Image(getClass().getResource("/com/example/partie2/silver_button.png").toString());
-        ImageView iv = new ImageView(image);
-        button.setGraphic(iv);
-        vbox.getChildren().add(button);
         // Ajout d'un bouton avec du vert
         Button button = new Button("Vert");
         vbox.getChildren().add( button );
         // Ajout d'un bouton avec du texte
        // Button button = new Button("Rouge");
-       // vbox.getChildren().add( button );
+       // vbox.getChildren().add( button );// Ajout d'un bouton avec du texte
+        //        Button button = new Button("Dire bonjour");
+        //        vbox.getChildren().add( button );
         // Ajout d'un bouton avec du texte
        // Button button = new Button("Bleu");
        // vbox.getChildren().add( button );
